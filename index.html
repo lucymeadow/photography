@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucy Meadow Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="/" class="site-title">Lucy Meadow Photography</a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+      <nav>
+        <a href="/" class="nav-link active" data-gallery="portfolio">portfolio</a>
+        <a href="#" class="nav-link" data-gallery="out-west">out west</a>
+        <a href="#" class="nav-link" data-gallery="lake-michigan">lake michigan</a>
+        <a href="#" class="nav-link" data-gallery="beijing">beijing</a>
+        <a href="#" class="nav-link" data-gallery="vietnam">vietnam</a>
+        <a href="#" class="nav-link" data-gallery="chicago">chicago</a>
+        <a href="#" class="nav-link" data-gallery="japan">japan</a>
+        <a href="#" class="nav-link" data-gallery="california">california</a>
+        <a href="#" class="nav-link" data-gallery="jordan">jordan</a>
+        <a href="#" class="nav-link" data-gallery="kauai">kauai</a>
+        <a href="#" class="nav-link" data-gallery="south-africa">south africa</a>
+        <a href="#" class="nav-link" data-gallery="astrophotography">astrophotography</a>
+        <a href="#" class="nav-link" data-page="about">about</a>
+        <a href="#" class="nav-link" data-page="contact">contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="gallery" class="gallery"></div>
+
+    <div id="about-page" class="page-content hidden">
+      <div class="page-inner">
+        <h2>About</h2>
+        <p>Travel photography by Lucy Meadow. Capturing moments from around the world.</p>
+      </div>
+    </div>
+
+    <div id="contact-page" class="page-content hidden">
+      <div class="page-inner">
+        <h2>Contact</h2>
+        <p>Get in touch at <a href="mailto:lucy@lucymeadowphotography.com">lucy@lucymeadowphotography.com</a></p>
+      </div>
+    </div>
+  </main>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous">&lsaquo;</button>
+    <button class="lightbox-next" aria-label="Next">&rsaquo;</button>
+    <div class="lightbox-img-wrap">
+      <img id="lightbox-img" src="" alt="">
+    </div>
+    <div class="lightbox-counter"><span id="lightbox-current">1</span> / <span id="lightbox-total">1</span></div>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
